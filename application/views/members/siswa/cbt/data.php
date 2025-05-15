@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: multazam
- * Date: 07/08/20
- * Time: 22:29
- */
-
 $arrGuru = [];
 foreach ($guru as $g) {
     $arrGuru[$g->id_guru] = $g->nama_guru;
@@ -52,8 +45,8 @@ $jadwal_selesai = [];
                                             <div class="card-body pt-0">
                                                 <ul class="list-group list-group-unbordered">
                                                     <?php
-                                                    $arrTitle = ['No. Peserta', 'Ruang', 'Sesi', 'Dari', 'Sampai'];
-                                                    $arrSub = [$cbt_info->no_peserta->nomor_peserta ?? '', $cbt_info->nama_ruang ?? '', $cbt_info->nama_sesi ?? '', substr($cbt_info->waktu_mulai, 0, -3), substr($cbt_info->waktu_akhir, 0, -3)];
+                                                    $arrTitle = ['No. Peserta', 'Sesi', 'Dari', 'Sampai'];
+                                                    $arrSub = [$cbt_info->no_peserta->nomor_peserta ?? '', $cbt_info->nama_sesi ?? '', substr($cbt_info->waktu_mulai, 0, -3), substr($cbt_info->waktu_akhir, 0, -3)];
                                                     foreach ($arrTitle as $key => $title) :
                                                         if ($arrSub[$key] == null) array_push($cbt_setting, $title)
                                                         ?>
@@ -86,7 +79,13 @@ $jadwal_selesai = [];
                                                 Membawa makanan dan minuman
                                             </li>
                                             <li>
-                                                Membawa handphone ke ruangan ujian
+                                                Menggunakan handphone di ruangan ujian
+                                            </li>
+                                            <li>
+                                                Mesum atau melakukan hal tidak senonoh
+                                            </li>
+                                            <li>
+                                                Saling jatuh cinta, cinlok, apalagi CLBK
                                             </li>
                                         </ul>
                                     </div>

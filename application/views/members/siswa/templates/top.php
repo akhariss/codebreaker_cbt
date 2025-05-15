@@ -3,7 +3,6 @@
     <div class="info-box-content">
         <h5 class="info-box-text text-white text-wrap"><b><?= $siswa->nama ?></b></h5>
         <span class="info-box-text text-white"><?= $siswa->nis ?></span>
-        <span class="info-box-text text-white mb-1"><?= $siswa->nama_kelas ?></span>
     </div>
 </div>
 

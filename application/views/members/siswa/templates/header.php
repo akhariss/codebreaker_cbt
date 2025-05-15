@@ -165,9 +165,9 @@ $display_logout = $this->uri->segment(2) == "penilaian" ? 'd-none' : '';
             </li>
         </ul>
         <div class="mx-auto text-white text-center" style="line-height: 1">
-            <span class="text-lg p-0"><?= $setting->nama_aplikasi ?></span>
+            <span class="text-lg p-0"><?= $setting->nama_aplikasi ?> cbt</span>
             <br>
-            <small>Tahun Pelajaran: <?= $tp_active->tahun ?> Smt:<?= $smt_active->smt ?></small>
+            <small>konfigura x Edutech x HIMAFOR</small>
         </div>
         <ul class="navbar-nav <?= $display_clock ?>">
             <li class="nav-item">
